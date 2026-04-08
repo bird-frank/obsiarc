@@ -10,6 +10,13 @@
 
 ## 安装说明
 
+### 克隆仓库
+
+```bash
+git clone https://github.com/bird-frank/obsiarc.git
+cd obsiarc
+```
+
 ### Claude Code
 
 Claude Code 支持从项目本地或全局 `skills` 目录加载自定义 Skill。
@@ -86,25 +93,6 @@ cp -r /path/to/obsiarc/skills/concept-card-extractor .openclaw/skills/
 mkdir -p ~/.openclaw/skills
 cp -r /path/to/obsiarc/skills/concept-card-extractor ~/.openclaw/skills/
 ```
-
----
-
-## 快速安装（全部 Skills）
-
-如果你想一次性安装本仓库中所有 skills 到当前项目，可以使用以下命令：
-
-```bash
-# Claude Code
-mkdir -p .claude/skills && cp -r /path/to/obsiarc/skills/* .claude/skills/
-
-# OpenCode
-mkdir -p .opencode/skills && cp -r /path/to/obsiarc/skills/* .opencode/skills/
-
-# OpenClaw
-mkdir -p .openclaw/skills && cp -r /path/to/obsiarc/skills/* .openclaw/skills/
-```
-
-将 `/path/to/obsiarc` 替换为你实际克隆本仓库的路径。
 
 ## 目录结构
 
