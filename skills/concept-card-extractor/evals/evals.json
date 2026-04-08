@@ -1,0 +1,23 @@
+{
+  "skill_name": "concept-card-extractor",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "请从 `/Users/guxiaofeng/Documents/guxf/knowledge/1-Sources/Articles/2026-04-04-martin-fowler-fragments-2026-04-02.md` 中提取关键概念和技术术语，在 2-Concepts/Engineering/ 下生成或补充概念卡片。如果概念已存在请智能合并补充。",
+      "expected_output": "在 2-Concepts/Engineering/ 下生成 2-4 个新的概念卡片（如 Fragment、API Design 等相关概念），格式符合 vault 中的概念卡片模板（有 frontmatter、一句话定义、核心要点、关联概念、原文摘录）。如果已有同名概念卡片则应进行补充合并而非覆盖。",
+      "files": ["/Users/guxiaofeng/Documents/guxf/knowledge/1-Sources/Articles/2026-04-04-martin-fowler-fragments-2026-04-02.md"]
+    },
+    {
+      "id": 2,
+      "prompt": "阅读 `/Users/guxiaofeng/Documents/guxf/knowledge/1-Sources/Reports/ai_agent_patterns_comprehensive_research.md`，提取其中关于 Agent 设计模式的关键概念，在 2-Concepts/AI/ 下生成或补充概念卡片。注意 ReAct 和 CoT 的卡片已经存在，如果报告中提到了新的要点请进行补充合并。",
+      "expected_output": "正确识别出 ReAct、CoT、ToT 等概念。对于已存在的 CoT.md 和 ReAct.md 进行智能补充（不覆盖原有内容，增加新要点或原文摘录）。为尚未存在的概念（如 ToT/Tree-of-Thought）创建新的原子概念卡片。所有卡片包含标准 frontmatter、wikilink 关联、原文摘录。",
+      "files": ["/Users/guxiaofeng/Documents/guxf/knowledge/1-Sources/Reports/ai_agent_patterns_comprehensive_research.md"]
+    },
+    {
+      "id": 3,
+      "prompt": "从 `/Users/guxiaofeng/Documents/guxf/knowledge/1-Sources/Reports/2026-04-03-ds_harness_engineering_deep_research_20260317.md` 中提取与软件工程平台相关的核心概念和技术术语，推断合适的分类目录（如 Engineering 或 Business），在 2-Concepts/<对应目录>/ 下生成或补充概念卡片。",
+      "expected_output": "正确推断分类目录（如 Engineering 或 AI/Engineering 交叉领域），生成 3-5 个概念卡片，每个卡片包含 frontmatter（tags 含 '概念' 和领域标签）、一句话定义、核心要点、关联概念链接、原文摘录。",
+      "files": ["/Users/guxiaofeng/Documents/guxf/knowledge/1-Sources/Reports/2026-04-03-ds_harness_engineering_deep_research_20260317.md"]
+    }
+  ]
+}
